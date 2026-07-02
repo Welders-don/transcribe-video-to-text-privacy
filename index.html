@@ -19,57 +19,62 @@
 <strong>Last updated:</strong> July 2, 2026</p>
 
 <h2>1. Overview</h2>
-<p>Transcribe Video to Text is a Chrome browser extension that transcribes and summarizes audio and video content. We are committed to protecting your privacy. This policy describes all data collected, how it is used, stored, and shared.</p>
+<p>Transcribe Video to Text is a Chrome browser extension that transcribes and summarizes audio and video content. This privacy policy describes what data we collect, how we use it, how it is stored, and with whom it is shared.</p>
 
 <h2>2. Data We Collect</h2>
 <ul>
-  <li><strong>Audio data:</strong> When native subtitles are unavailable, audio from the active tab is temporarily captured and sent to a third-party transcription service (Deepgram or Speechmatics) for processing. Audio is not stored on our servers after transcription.</li>
-  <li><strong>Usage token:</strong> A randomly generated UUID is created locally and stored in your browser. It is sent to our backend server with each request to track your usage credits. It is not linked to any personal identity.</li>
-  <li><strong>Browser fingerprint:</strong> A hash derived from browser properties (e.g. language, screen resolution, timezone) is generated locally and sent to our backend solely to detect abuse and enforce fair usage limits. It is not used for advertising or profiling.</li>
-  <li><strong>Video metadata and subtitle text (YouTube):</strong> When a YouTube video has caption tracks, the extension fetches subtitle text directly from YouTube servers and displays it locally. For usage accounting purposes, the video URL, detected language, video duration, and subtitle text are sent to our backend server. This data is used solely to record credit consumption and is not shared with third parties.</li>
-  <li><strong>Video metadata (other platforms):</strong> For non-YouTube videos, video URL and platform type are sent to our backend as part of the transcription request. Subtitle text from Vimeo and other platforms is fetched locally and not transmitted to our servers.</li>
-  <li><strong>Uninstall feedback (optional):</strong> When you uninstall the extension, Chrome opens a voluntary feedback survey hosted on Google Forms. Participation is entirely optional. Any data you choose to submit in that form is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. We do not receive any data unless you actively submit the form.</li>
+  <li><strong>Audio data:</strong> When native subtitles are unavailable, audio from the active browser tab is temporarily captured and sent to a third-party transcription service for processing. Audio is not stored on our servers.</li>
+  <li><strong>Usage token:</strong> A randomly generated UUID is created and stored locally in your browser. It is sent to our backend server with each request to track your usage credits. It is not linked to any personal identity.</li>
+  <li><strong>Browser fingerprint:</strong> A hash derived from browser properties (language, screen resolution, timezone) is generated locally and sent to our backend to detect abuse and enforce fair usage limits.</li>
+  <li><strong>Video metadata and subtitle text (YouTube):</strong> When a YouTube video has caption tracks, subtitles are fetched directly from YouTube. The video URL, language, duration, and subtitle text are also sent to our backend for usage accounting.</li>
+  <li><strong>Video metadata (other platforms):</strong> For non-YouTube videos, the video URL and platform type are sent to our backend as part of the transcription request.</li>
+  <li><strong>Uninstall feedback (optional):</strong> When you uninstall the extension, a voluntary feedback survey hosted on Google Forms may open. Participation is entirely optional and governed by <a href="https://policies.google.com/privacy">Google&apos;s Privacy Policy</a>.</li>
 </ul>
 
-<h2>3. Data We Do NOT Collect</h2>
+<h2>3. How We Use Your Data</h2>
 <ul>
-  <li>We do not collect your name, email address, or any personal identifiers.</li>
-  <li>We do not store audio recordings on our servers.</li>
-  <li>We do not track your browsing history outside of active transcription sessions.</li>
-  <li>We do not sell or share your data with third parties for advertising purposes.</li>
+  <li><strong>Audio data</strong> is used solely to generate a text transcription. It is processed by a third-party transcription service and is not used for any other purpose.</li>
+  <li><strong>Usage token</strong> is used to track and enforce your monthly transcription credit limit.</li>
+  <li><strong>Browser fingerprint</strong> is used only to detect abuse and prevent credit limit bypass. It is never used for advertising, profiling, or tracking across websites.</li>
+  <li><strong>Video metadata and subtitle text</strong> are used to record credit consumption and provide transcription history within the extension.</li>
+  <li>We do not use any collected data for advertising, behavioral tracking, or sale to third parties.</li>
 </ul>
 
 <h2>4. Data Storage and Retention</h2>
 <ul>
-  <li><strong>Local storage:</strong> Your usage token, credit balance, and session state are stored in your browser using Chrome's local storage API. This data stays on your device.</li>
-  <li><strong>Backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored on our server to enforce usage limits. This data is not linked to any personally identifiable information.</li>
-  <li><strong>Audio:</strong> Audio data is transmitted directly to the transcription provider and is not retained after processing.</li>
+  <li><strong>Local storage:</strong> Your usage token, credit balance, and session state are stored in your browser using Chrome local storage. This data stays on your device.</li>
+  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits. This data is retained for 30 days and is not linked to any personally identifiable information.</li>
+  <li><strong>Audio:</strong> Audio is transmitted to the transcription provider and is not retained on our servers after processing is complete.</li>
 </ul>
 
-<h2>5. Third-Party Services</h2>
-<p>When native subtitles are unavailable, audio transcription is processed by one of the following services:</p>
+<h2>5. Data Sharing</h2>
+<p>We share user data only as necessary to provide the transcription service:</p>
 <ul>
-  <li><a href="https://deepgram.com/privacy">Deepgram</a> — primary transcription provider. Audio is transmitted solely for transcription and is subject to their privacy policy.</li>
-  <li><a href="https://www.speechmatics.com/legal/privacy-policy">Speechmatics</a> — fallback transcription provider, used automatically if Deepgram is temporarily unavailable. Subject to their privacy policy.</li>
+  <li><strong>Deepgram</strong> (<a href="https://deepgram.com/privacy">privacy policy</a>) — primary transcription provider. Audio is transmitted to Deepgram solely to generate a transcript. We do not control how Deepgram stores or processes audio on their end.</li>
+  <li><strong>Speechmatics</strong> (<a href="https://www.speechmatics.com/legal/privacy-policy">privacy policy</a>) — fallback transcription provider, used automatically if Deepgram is temporarily unavailable. Audio is transmitted to Speechmatics under the same conditions.</li>
+  <li><strong>Google Forms</strong> — if you choose to complete the optional uninstall feedback survey, your responses are submitted to Google and governed by Google&apos;s privacy policy.</li>
 </ul>
-<p>Caption tracks for YouTube and Vimeo videos are fetched directly from those platforms's servers. YouTube subtitle text is additionally sent to our backend for usage accounting as described above.</p>
+<p>We do not sell, rent, or share user data with any other third parties, advertising networks, or data brokers.</p>
 
 <h2>6. Permissions</h2>
 <ul>
-  <li><strong>tabCapture / offscreen:</strong> To capture tab audio for transcription when native subtitles are not available.</li>
+  <li><strong>tabCapture / offscreen:</strong> To capture tab audio for transcription when native subtitles are unavailable.</li>
   <li><strong>activeTab:</strong> To read the current page URL, video metadata, and caption track information.</li>
-  <li><strong>scripting:</strong> To detect media presence and extract subtitle tracks from embedded video players (e.g. Vimeo iframes).</li>
-  <li><strong>storage:</strong> To store your usage token, credit balance, and transcription state locally in the browser.</li>
+  <li><strong>scripting:</strong> To detect media and extract subtitle tracks from embedded video players (e.g. Vimeo iframes).</li>
+  <li><strong>storage:</strong> To store your usage token, credit balance, and transcription state locally.</li>
   <li><strong>sidePanel:</strong> To display the transcription interface.</li>
-  <li><strong>webNavigation:</strong> To detect page navigation and reset transcription state accordingly.</li>
+  <li><strong>webNavigation:</strong> To detect page navigation and reset transcription state.</li>
 </ul>
 
 <h2>7. Data Security</h2>
 <p>All data is transmitted over encrypted HTTPS/WSS connections. Audio is not retained after transcription is complete. Usage tokens and fingerprint hashes do not contain personally identifiable information.</p>
 
-<h2>8. Contact</h2>
-<p>If you have questions about this privacy policy, contact us at: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
+<h2>8. Your Rights</h2>
+<p>Since we do not collect personally identifiable information, we cannot identify individual users. Your usage token is stored only in your browser — clearing browser storage removes it entirely. If you have questions about data associated with your session, contact us and we will do our best to assist.</p>
 
-<footer>© 2026 Transcribe Video to Text</footer>
+<h2>9. Contact</h2>
+<p>Questions about this privacy policy: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
+
+<footer>&copy; 2026 Transcribe Video to Text</footer>
 </body>
 </html>
