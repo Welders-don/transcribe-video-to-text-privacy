@@ -16,33 +16,42 @@
 <body>
 <h1>Privacy Policy</h1>
 <p><strong>Extension:</strong> Transcribe Video to Text<br>
-<strong>Last updated:</strong> June 24, 2026</p>
+<strong>Last updated:</strong> July 2, 2026</p>
 <h2>1. Overview</h2>
 <p>Transcribe Video to Text is a Chrome browser extension that transcribes and summarizes audio and video content. We are committed to protecting your privacy.</p>
 <h2>2. Data We Collect</h2>
 <ul>
-  <li><strong>Audio data:</strong> When you click Transcribe, audio from the active tab is temporarily captured and sent to Deepgram for processing. Audio is not stored after transcription.</li>
-  <li><strong>Usage credits:</strong> We store a usage counter per session to enforce the free-tier limit. No personal data is stored.</li>
-  <li><strong>YouTube video metadata:</strong> Video ID and title are read from the page to identify the video. Not transmitted to our servers.</li>
+  <li><strong>Audio data:</strong> When native subtitles are unavailable, audio from the active tab is temporarily captured and sent to a third-party transcription service for processing. Audio is not stored after transcription.</li>
+  <li><strong>Usage token:</strong> A randomly generated UUID is stored locally and sent to our backend to track your usage credits. It is not linked to any personal identity.</li>
+  <li><strong>Browser fingerprint:</strong> A hash derived from browser properties (e.g. language, screen resolution) is generated locally and sent to our backend solely to detect abuse and enforce fair usage limits. It is not used for tracking or advertising.</li>
+  <li><strong>Video metadata:</strong> Video ID, title, and audio language are read from the current page to identify the content. These are not stored on our servers.</li>
+  <li><strong>Subtitle data (YouTube / Vimeo):</strong> When a video has existing caption tracks, the extension fetches subtitle text directly from the video platform (YouTube or Vimeo). No audio is captured in this case.</li>
 </ul>
 <h2>3. Data We Do NOT Collect</h2>
 <ul>
   <li>We do not collect your name, email, or any personal identifiers.</li>
-  <li>We do not store transcription results on our servers.</li>
+  <li>We do not store transcription results or audio on our servers.</li>
   <li>We do not track browsing history outside of active transcription sessions.</li>
   <li>We do not sell or share data with third parties for advertising.</li>
 </ul>
 <h2>4. Third-Party Services</h2>
-<p>Audio transcription is powered by <a href="https://deepgram.com/privacy">Deepgram</a>. Audio is transmitted solely for transcription and is subject to their privacy policy.</p>
+<p>When native subtitles are unavailable, audio transcription is processed by one of the following services:</p>
+<ul>
+  <li><a href="https://deepgram.com/privacy">Deepgram</a> — primary transcription provider. Audio is transmitted solely for transcription and is subject to their privacy policy.</li>
+  <li><a href="https://www.speechmatics.com/legal/privacy-policy">Speechmatics</a> — fallback transcription provider, used automatically if the primary service is unavailable. Subject to their privacy policy.</li>
+</ul>
+<p>Caption tracks for YouTube and Vimeo videos are fetched directly from those platforms and are not transmitted to our servers.</p>
 <h2>5. Permissions</h2>
 <ul>
-  <li><strong>tabCapture / offscreen:</strong> To capture tab audio for transcription.</li>
-  <li><strong>activeTab:</strong> To read the current page URL and video metadata.</li>
-  <li><strong>storage:</strong> To store your credit balance locally in the browser.</li>
+  <li><strong>tabCapture / offscreen:</strong> To capture tab audio for transcription when native subtitles are not available.</li>
+  <li><strong>activeTab:</strong> To read the current page URL, video metadata, and caption track information.</li>
+  <li><strong>scripting:</strong> To detect media presence and extract subtitle tracks from embedded video players (e.g. Vimeo iframes).</li>
+  <li><strong>storage:</strong> To store your usage token and transcription state locally in the browser.</li>
   <li><strong>sidePanel:</strong> To display the transcription interface.</li>
+  <li><strong>webNavigation:</strong> To detect page navigation and reset the transcription state accordingly.</li>
 </ul>
 <h2>6. Data Security</h2>
-<p>All audio data is transmitted over encrypted HTTPS. We do not retain audio after transcription is complete.</p>
+<p>All data is transmitted over encrypted HTTPS/WSS connections. Audio is not retained after transcription is complete. Usage tokens and fingerprint hashes do not contain personally identifiable information.</p>
 <h2>7. Contact</h2>
 <p>Questions? Contact us at: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
 <footer>© 2026 Transcribe Video to Text</footer>
