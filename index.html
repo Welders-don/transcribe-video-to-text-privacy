@@ -28,33 +28,35 @@
   <li><strong>Browser fingerprint:</strong> A hash derived from browser properties (language, screen resolution, timezone) is generated locally and sent to our backend to detect abuse and enforce fair usage limits.</li>
   <li><strong>Video metadata and subtitle text (YouTube):</strong> When a YouTube video has caption tracks, subtitles are fetched directly from YouTube. The video URL, language, duration, and subtitle text are also sent to our backend for usage accounting.</li>
   <li><strong>Video metadata (other platforms):</strong> For non-YouTube videos, the video URL and platform type are sent to our backend as part of the transcription request.</li>
+  <li><strong>Feedback email (optional):</strong> If you choose to submit feedback through the in-extension form, you may optionally provide your email address for follow-up. This is entirely voluntary and based on your explicit consent. Your email is stored on our backend server solely to respond to your feedback and is never shared with third parties or used for marketing.</li>
   <li><strong>Uninstall feedback (optional):</strong> When you uninstall the extension, a voluntary feedback survey hosted on Google Forms may open. Participation is entirely optional and governed by <a href="https://policies.google.com/privacy">Google&apos;s Privacy Policy</a>.</li>
 </ul>
 
 <h2>3. How We Use Your Data</h2>
 <ul>
-  <li><strong>Audio data</strong> is used solely to generate a text transcription. It is processed by a third-party transcription service and is not used for any other purpose.</li>
+  <li><strong>Audio data</strong> is used solely to generate a text transcription. It is not used for any other purpose.</li>
   <li><strong>Usage token</strong> is used to track and enforce your monthly transcription credit limit.</li>
-  <li><strong>Browser fingerprint</strong> is used only to detect abuse and prevent credit limit bypass. It is never used for advertising, profiling, or tracking across websites.</li>
+  <li><strong>Browser fingerprint</strong> is used only to detect abuse and prevent credit limit bypass. It is never used for advertising, profiling, or tracking.</li>
   <li><strong>Video metadata and subtitle text</strong> are used to record credit consumption and provide transcription history within the extension.</li>
+  <li><strong>Feedback email</strong> is used solely to respond to your submitted feedback. You provide it voluntarily and can omit it at any time.</li>
   <li>We do not use any collected data for advertising, behavioral tracking, or sale to third parties.</li>
 </ul>
 
 <h2>4. Data Storage and Retention</h2>
 <ul>
   <li><strong>Local storage:</strong> Your usage token, credit balance, and session state are stored in your browser using Chrome local storage. This data stays on your device.</li>
-  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits. This data is retained for 30 days and is not linked to any personally identifiable information.</li>
+  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits and retained for 30 days. Feedback messages and optional email addresses are stored as long as necessary to process and respond to feedback.</li>
   <li><strong>Audio:</strong> Audio is transmitted to the transcription provider and is not retained on our servers after processing is complete.</li>
 </ul>
 
 <h2>5. Data Sharing</h2>
 <p>We share user data only as necessary to provide the transcription service:</p>
 <ul>
-  <li><strong>Deepgram</strong> (<a href="https://deepgram.com/privacy">privacy policy</a>) — primary transcription provider. Audio is transmitted to Deepgram solely to generate a transcript. We do not control how Deepgram stores or processes audio on their end.</li>
-  <li><strong>Speechmatics</strong> (<a href="https://www.speechmatics.com/legal/privacy-policy">privacy policy</a>) — fallback transcription provider, used automatically if Deepgram is temporarily unavailable. Audio is transmitted to Speechmatics under the same conditions.</li>
-  <li><strong>Google Forms</strong> — if you choose to complete the optional uninstall feedback survey, your responses are submitted to Google and governed by Google&apos;s privacy policy.</li>
+  <li><strong>Deepgram</strong> (<a href="https://deepgram.com/privacy">privacy policy</a>) — primary transcription provider. Audio is transmitted to Deepgram solely to generate a transcript.</li>
+  <li><strong>Speechmatics</strong> (<a href="https://www.speechmatics.com/legal/privacy-policy">privacy policy</a>) — fallback transcription provider, used automatically if Deepgram is temporarily unavailable.</li>
+  <li><strong>Google Forms</strong> — if you complete the optional uninstall feedback survey, your responses are submitted to Google and governed by Google&apos;s privacy policy.</li>
 </ul>
-<p>We do not sell, rent, or share user data with any other third parties, advertising networks, or data brokers.</p>
+<p>We do not sell, rent, or share user data with any other third parties, advertising networks, or data brokers. Feedback emails are never shared or used for any purpose other than responding to you.</p>
 
 <h2>6. Permissions</h2>
 <ul>
@@ -70,10 +72,10 @@
 <p>All data is transmitted over encrypted HTTPS/WSS connections. Audio is not retained after transcription is complete. Usage tokens and fingerprint hashes do not contain personally identifiable information.</p>
 
 <h2>8. Your Rights</h2>
-<p>Since we do not collect personally identifiable information, we cannot identify individual users. Your usage token is stored only in your browser — clearing browser storage removes it entirely. If you have questions about data associated with your session, contact us and we will do our best to assist.</p>
+<p>You may request deletion of your feedback and associated email by contacting us. Since we do not collect personally identifiable information beyond the optional feedback email, clearing your browser storage removes all locally stored data. For any data requests, contact us at the address below.</p>
 
 <h2>9. Contact</h2>
-<p>Questions about this privacy policy: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
+<p>Questions about this privacy policy or data requests: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
 
 <footer>&copy; 2026 Transcribe Video to Text</footer>
 </body>
