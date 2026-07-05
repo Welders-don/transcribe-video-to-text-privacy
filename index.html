@@ -16,7 +16,7 @@
 <body>
 <h1>Privacy Policy</h1>
 <p><strong>Extension:</strong> Transcribe Video to Text<br>
-<strong>Last updated:</strong> July 2, 2026</p>
+<strong>Last updated:</strong> July 5, 2026</p>
 
 <h2>1. Overview</h2>
 <p>Transcribe Video to Text is a Chrome browser extension that transcribes and summarizes audio and video content. This privacy policy describes what data we collect, how we use it, how it is stored, and with whom it is shared.</p>
@@ -29,7 +29,8 @@
   <li><strong>Video metadata and subtitle text (YouTube):</strong> When a YouTube video has caption tracks, subtitles are fetched directly from YouTube. The video URL, language, duration, and subtitle text are also sent to our backend for usage accounting.</li>
   <li><strong>Video metadata (other platforms):</strong> For non-YouTube videos, the video URL and platform type are sent to our backend as part of the transcription request.</li>
 
-  <li><strong>Uninstall feedback (optional):</strong> When you uninstall the extension, a voluntary feedback survey hosted on Google Forms may open. Participation is entirely optional and governed by <a href="https://policies.google.com/privacy">Google&apos;s Privacy Policy</a>.</li>
+  <li><strong>IP address (on uninstall):</strong> When the extension is uninstalled, your IP address is sent to our backend server and logged, to detect abnormal uninstall spikes (e.g. a broken release) and understand aggregate usage. It is not linked to your identity and is not shared with third parties.</li>
+  <li><strong>Uninstall feedback (optional):</strong> After the above, you are redirected to a voluntary feedback survey hosted on Google Forms. Participation is entirely optional and governed by <a href="https://policies.google.com/privacy">Google&apos;s Privacy Policy</a>.</li>
 </ul>
 
 <h2>3. How We Use Your Data</h2>
@@ -45,7 +46,7 @@
 <h2>4. Data Storage and Retention</h2>
 <ul>
   <li><strong>Local storage:</strong> Your usage token, credit balance, and session state are stored in your browser using Chrome local storage. This data stays on your device.</li>
-  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits and retained for 30 days. Feedback messages are stored for up to 30 days to process your request.</li>
+  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits and retained for 30 days. Feedback messages are stored for up to 30 days to process your request. Uninstall IP logs are retained for 30 days.</li>
   <li><strong>Audio:</strong> Audio is transmitted to the transcription provider and is not retained on our servers after processing is complete.</li>
 </ul>
 
