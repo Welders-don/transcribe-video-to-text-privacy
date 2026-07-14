@@ -29,6 +29,8 @@
   <li><strong>Video metadata and subtitle text (YouTube):</strong> When a YouTube video has caption tracks, subtitles are fetched directly from YouTube. The video URL, language, duration, and subtitle text are also sent to our backend for usage accounting.</li>
   <li><strong>Video metadata (other platforms):</strong> For non-YouTube videos, the video URL and platform type are sent to our backend as part of the transcription request.</li>
 
+  <li><strong>Shared post URL (optional):</strong> If you choose to participate in the &quot;Get more free minutes&quot; program, the public URL of the social media post you submit is sent to our backend and stored to verify the share and prevent duplicate claims. Participation is entirely optional. The URL is not used for any other purpose and is not linked to any personal identity.</li>
+
   <li><strong>IP address (on uninstall):</strong> When the extension is uninstalled, your IP address is sent to our backend server and logged, to detect abnormal uninstall spikes (e.g. a broken release) and understand aggregate usage. It is not linked to your identity and is not shared with third parties.</li>
   <li><strong>Uninstall feedback (optional):</strong> After the above, you are redirected to a voluntary feedback survey hosted on Google Forms. Participation is entirely optional and governed by <a href="https://policies.google.com/privacy">Google&apos;s Privacy Policy</a>.</li>
 </ul>
@@ -39,6 +41,7 @@
   <li><strong>Usage token</strong> is used to track and enforce your monthly transcription credit limit.</li>
   <li><strong>Browser fingerprint</strong> is used only to detect abuse and prevent credit limit bypass. It is never used for advertising, profiling, or tracking.</li>
   <li><strong>Video metadata and subtitle text</strong> are used to record credit consumption and provide transcription history within the extension.</li>
+  <li><strong>Shared post URL</strong> is used only to verify your participation in the optional share program and to grant the corresponding usage limit boost.</li>
 
   <li>We do not use any collected data for advertising, behavioral tracking, or sale to third parties.</li>
 </ul>
@@ -46,7 +49,7 @@
 <h2>4. Data Storage and Retention</h2>
 <ul>
   <li><strong>Local storage:</strong> Your usage token, credit balance, and session state are stored in your browser using Chrome local storage. This data stays on your device.</li>
-  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits and retained for 30 days. Feedback messages are stored for up to 30 days to process your request. Uninstall IP logs are retained for 30 days.</li>
+  <li><strong>Our backend server:</strong> Usage records (video URL, language, duration, subtitle text for YouTube) are stored to enforce usage limits and retained for 30 days. Feedback messages are stored for up to 30 days to process your request. Uninstall IP logs are retained for 30 days. Shared post URLs from the optional share program are retained to prevent duplicate claims.</li>
   <li><strong>Audio:</strong> Audio is transmitted to the transcription provider and is not retained on our servers after processing is complete.</li>
 </ul>
 
